@@ -45,12 +45,12 @@ const Step2: React.FC<Step2Props> = ({ data, updateData, onNext, onBack }) => {
             <label className="field-label">Service Type <span className="required">*</span></label>
             <div className={`service-type-grid ${errors.service_type ? 'error-ring' : ''}`} role="radiogroup">
               {[
-                { value: 'Medical Cleaning', label: 'Medical', icon: <path d="M4.8 2.3A.3.3 0 105 2H4a2 2 0 00-2 2v5a6 6 0 006 6v0a6 6 0 006-6V4a2 2 0 00-2-2h-1a.2.2 0 10.3.3"/><path d="M8 15v1a6 6 0 006 6v0a6 6 0 006-6v-4"/><line x1="2" y1="6" x2="19" y2="6"/><line x1="2" y1="10" x2="5" y2="10"/> },
-                { value: 'Office Cleaning', label: 'Office', icon: <rect x="4" y="2" width="16" height="20" rx="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M12 6h.01"/><path d="M12 10h.01"/><path d="M12 14h.01"/><path d="M16 10h.01"/><path d="M16 14h.01"/><path d="M8 10h.01"/><path d="M8 14h.01"/> },
-                { value: 'School Cleaning', label: 'School', icon: <path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/> },
-                { value: 'Childcare Cleaning', label: 'Childcare', icon: <circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 00-16 0"/> },
+                { value: 'Medical Cleaning', label: 'Medical', icon: <><path d="M4.8 2.3A.3.3 0 105 2H4a2 2 0 00-2 2v5a6 6 0 006 6v0a6 6 0 006-6V4a2 2 0 00-2-2h-1a.2.2 0 10.3.3"/><path d="M8 15v1a6 6 0 006 6v0a6 6 0 006-6v-4"/><line x1="2" y1="6" x2="19" y2="6"/><line x1="2" y1="10" x2="5" y2="10"/></> },
+                { value: 'Office Cleaning', label: 'Office', icon: <><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M12 6h.01"/><path d="M12 10h.01"/><path d="M12 14h.01"/><path d="M16 10h.01"/><path d="M16 14h.01"/><path d="M8 10h.01"/><path d="M8 14h.01"/></> },
+                { value: 'School Cleaning', label: 'School', icon: <><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></> },
+                { value: 'Childcare Cleaning', label: 'Childcare', icon: <><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 00-16 0"/></> },
                 { value: 'Industrial Cleaning', label: 'Industrial', icon: <path d="M2 20a2 2 0 002 2h16a2 2 0 002-2V8l-7 5V8l-7 5V4a2 2 0 00-2-2H4a2 2 0 00-2 2z"/> },
-                { value: 'Other', label: 'Other', icon: <circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/> }
+                { value: 'Other', label: 'Other', icon: <><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></> }
               ].map(opt => (
                 <label key={opt.value} className="service-type-option">
                   <input 
