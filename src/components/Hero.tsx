@@ -40,8 +40,8 @@ const Hero: React.FC = () => {
                 </h3>
                 <div className="locations-list">
                   <div className="location-item"><span className="location-dot"></span> Brisbane &amp; South East Queensland</div>
-                  <div className="location-item"><span class="location-dot"></span> Melbourne &amp; Greater Victoria</div>
-                  <div className="location-item"><span class="location-dot"></span> Sydney &amp; Greater NSW</div>
+                  <div className="location-item"><span className="location-dot"></span> Melbourne &amp; Greater Victoria</div>
+                  <div className="location-item"><span className="location-dot"></span> Sydney &amp; Greater NSW</div>
                 </div>
               </div>
 
